@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
 </head>
 <body>
     <h1>Editar tarefas</h1>
-    <form action="update_task_name.php" method="POST"></form>
+    <form action="update_task_name.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $task['id']; ?>">
         <input type="text" name="title" value="<?php htmlspecialchars($task['title']); ?>" required>
         <button type="submit">Salvar alteração</button>
